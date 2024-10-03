@@ -112,9 +112,9 @@ services:
             - HIDE_PREJOIN_EXTRA_BUTTONS
             - INVITE_SERVICE_URL
             - JVB_PREFER_SCTP
-            - LETSENCRYPT_DOMAIN
-            - LETSENCRYPT_EMAIL
-            - LETSENCRYPT_USE_STAGING
+            - LETSENCRYPT_DOMAIN=${LETSENCRYPT_DOMAIN:-meeting.sbazar.in}
+            - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL:-admin@sbazar.app}
+            - LETSENCRYPT_USE_STAGING=${LETSENCRYPT_USE_STAGING:-1}
             - MATOMO_ENDPOINT
             - MATOMO_SITE_ID
             - MICROSOFT_API_APP_CLIENT_ID
@@ -124,7 +124,7 @@ services:
             - NGINX_WORKER_CONNECTIONS
             - PEOPLE_SEARCH_URL
             - PREFERRED_LANGUAGE
-            - PUBLIC_URL=${PUBLIC_URL:-https://meeting.sbazar.in}"
+            - PUBLIC_URL=${PUBLIC_URL:-https://meeting.sbazar.in}
             - P2P_PREFERRED_CODEC
             - RESOLUTION
             - RESOLUTION_MIN
