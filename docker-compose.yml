@@ -226,7 +226,7 @@ services:
             - JIBRI_XMPP_USER
             - JIBRI_XMPP_PASSWORD=${JIBRI_XMPP_PASSWORD:-your_secure_password_here}
             - JICOFO_AUTH_PASSWORD=${JICOFO_AUTH_PASSWORD:-your_secure_password_here}
-            - JICOFO_COMPONENT_SECRET
+            - JICOFO_COMPONENT_SECRET=${JICOFO_COMPONENT_SECRET:-your_secure_password_here}
             - JIGASI_TRANSCRIBER_PASSWORD
             - JIGASI_TRANSCRIBER_USER
             - JIGASI_XMPP_USER
